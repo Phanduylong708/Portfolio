@@ -1,0 +1,29 @@
+# Dependencies and build output
+node_modules/
+dist/
+*.local
+
+# Notes and drafts: only the README is committed
+*.md
+!README.md
+
+# Source files kept locally (the served copy lives in public/cv/)
+/Phan Duy Long -  CV.pdf
+
+# OS / editor junk
+*:Zone.Identifier
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Logs, caches, env
+*.log
+npm-debug.log*
+.eslintcache
+.env
+.env.*
+
+# Local tooling
+.claude/
