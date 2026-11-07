@@ -30,8 +30,8 @@ export const projects = [
     thumbnail: portfolioThumb,
     tone: "light",
     tags: ["React", "React Router", "GSAP", "Three.js", "Vite"],
-    github: "https://github.com/Phanduylong708",
-    demo: null,
+    github: "https://github.com/Phanduylong708/Portfolio",
+    demo: "https://portfolio2-tau-ecru.vercel.app",
     content: {
       en: {
         title: "Personal Portfolio",
