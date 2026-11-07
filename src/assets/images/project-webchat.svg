@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#1d1c16"/>
+  <circle cx="610" cy="250" r="170" fill="#f57a3c"/>
+  <text x="56" y="84" font-family="IBM Plex Mono, monospace" font-size="18" letter-spacing="3" fill="#f7f9fb">001 / FULLSTACK</text>
+  <text x="56" y="420" font-family="Bodoni Moda, Georgia, serif" font-size="76" fill="#f7f9fb">Webchat.</text>
+</svg>
