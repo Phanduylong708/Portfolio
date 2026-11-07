@@ -2,7 +2,7 @@
 
 Website CV cá nhân nhiều trang, xây dựng bằng React và React Router. Gồm các trang: giới thiệu, hồ sơ, kỹ năng, danh sách dự án có lọc và tìm kiếm, và form liên hệ có validate. Chuyển trang có hiệu ứng động, trang chủ có tượng 3D WebGL.
 
-**Link demo:** _đang cập nhật_
+**Link demo:** https://portfolio2-tau-ecru.vercel.app
 
 ![Trang chủ](docs/screenshots/home.png)
 
@@ -35,6 +35,14 @@ Khi deploy lên hosting tĩnh, mọi route phải fallback về `index.html` đ�
 
 - `vercel.json` cho Vercel.
 - `public/_redirects` cho Netlify và Cloudflare Pages.
+
+Bản demo hiện được deploy trên Vercel (Vite được nhận diện tự động: build `vite build`, output `dist/`). Deploy thủ công bằng Vercel CLI:
+
+```bash
+npm i -g vercel
+vercel login
+vercel --prod
+```
 
 ## Tính năng đã làm
 
