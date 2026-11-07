@@ -4,6 +4,7 @@ import { ArrowRight, ArrowUpRight, MoveHorizontal, Pause, Play } from "lucide-re
 import Lines from "../components/Lines.jsx";
 import PageShell from "../components/PageShell.jsx";
 import { profile } from "../data/profile.js";
+import avatar from "../assets/images/avatar.webp";
 import { projects } from "../data/projects.js";
 import { useI18n } from "../i18n/useI18n.js";
 import { portfolioStyles } from "../styles/pageStyles.js";
@@ -154,19 +155,30 @@ function About() {
         </div>
         <div>
           <p className="lead">{t("home.aboutLead")}</p>
-          <div className="discipline">
-            {t("home.aboutRows").map(({ to, title, text }, i) => (
-              <Link className="log-row" to={to} key={to}>
-                <span className="meta">{String(i + 1).padStart(2, "0")}</span>
-                <div>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </div>
-                <span className="pull">
-                  <ArrowUpRight aria-hidden="true" />
-                </span>
-              </Link>
-            ))}
+          <div className="about-detail">
+            <div className="discipline">
+              {t("home.aboutRows").map(({ to, title, text }, i) => (
+                <Link className="log-row" to={to} key={to}>
+                  <span className="meta">{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </div>
+                  <span className="pull">
+                    <ArrowUpRight aria-hidden="true" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+            <img
+              className="about-avatar"
+              src={avatar}
+              alt={t("home.avatarAlt")}
+              width="600"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </div>

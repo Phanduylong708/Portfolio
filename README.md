@@ -61,9 +61,9 @@ Khi deploy lên hosting tĩnh, mọi route phải fallback về `index.html` đ�
   - Hero ghi họ tên, chức danh ứng tuyển và đoạn giới thiệu ngắn.
   - Nút CTA "View resume" và "View projects".
   - Tượng David 3D tải lazy: kéo chuột hoặc dùng phím mũi tên để xoay, có nút tạm dừng chuyển động.
-  - Các phần: lĩnh vực chính, giới thiệu, dự án tiêu biểu, lời mời liên hệ.
+  - Các phần: lĩnh vực chính, giới thiệu (kèm ảnh chân dung), dự án tiêu biểu, lời mời liên hệ.
 - **Hồ sơ (Resume):**
-  - Thông tin cá nhân và mục tiêu nghề nghiệp.
+  - Thông tin cá nhân (năm sinh, giới tính, địa chỉ, email, SĐT) và mục tiêu nghề nghiệp.
   - Học vấn: trường, chuyên ngành, GPA, thời gian học.
   - Kinh nghiệm làm việc dạng timeline: công ty, vị trí, thời gian, mô tả theo bullet.
   - Nút **Download CV** để tải file PDF.

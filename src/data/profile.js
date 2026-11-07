@@ -14,6 +14,8 @@ export const profile = {
       intro:
         "Computer Science graduate who builds responsive, fast React interfaces — from course platforms to real-time chat.",
       personal: [
+        { label: "Year of birth", value: "2004" },
+        { label: "Gender", value: "Male" },
         { label: "Location", value: "Ho Chi Minh City" },
       ],
       objective: [

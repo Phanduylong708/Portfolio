@@ -42,6 +42,47 @@
   text-decoration: underline;
   text-underline-offset: 6px;
 }
+/* Portrait beside the page links: the grid stretches it to the list's height, so its top
+   sits on the first row's rule and its bottom on the last row's baseline. */
+.about-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--avatar-w, 260px);
+  gap: 40px;
+  margin-top: 40px;
+}
+.about-detail .discipline {
+  margin-top: 0;
+}
+.about-avatar {
+  width: 100%;
+  /* Contribute no height of its own; fill whatever the list makes the row. */
+  height: 0;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border: 1px solid color-mix(in oklch, var(--fg) 12%, transparent);
+  background: var(--surface);
+}
+@media (max-width: 1100px) and (min-width: 921px) {
+  .about-detail {
+    --avatar-w: 200px;
+    gap: 32px;
+  }
+}
+/* Too narrow to share a row: the portrait stacks above the links at its natural ratio. */
+@media (max-width: 640px) {
+  .about-detail {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .about-avatar {
+    order: -1;
+    width: min(100%, 280px);
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+  }
+}
 .section.contact .container {
   max-width: 1100px;
 }

@@ -71,6 +71,7 @@ const en = {
     ],
     disciplinesLabel: "Core areas",
     aboutEyebrow: "02 / ABOUT",
+    avatarAlt: "Portrait of Phan Duy Long",
     aboutTitle: "Interfaces that feel fast. Code that stays readable.",
     aboutPrinciple: "Build it. Measure it.\nThen make it simpler.",
     aboutLead:
