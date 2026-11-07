@@ -1,0 +1,24 @@
+/* Route transition layer — lives outside the per-page stylesheets, so it is always present. */
+.route-view {
+  display: contents;
+}
+.route-view main:focus {
+  outline: none;
+}
+.route-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: var(--fg, oklch(15% 0.02 100));
+  color: var(--bg, oklch(98% 0.004 240));
+  transform: scaleY(0);
+  visibility: hidden;
+  pointer-events: none;
+}
+.route-curtain span {
+  font: 500 clamp(56px, 10vw, 160px) / 1 "Bodoni Moda", Georgia, serif;
+  letter-spacing: -0.05em;
+  opacity: 0;
+}
